@@ -10,23 +10,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #0f172a;
+            background-color: #0f172a;
             font-family: Arial, sans-serif;
         }
 
-        .container {
-            background: #1e293b;
+        .box {
+            background-color: #1e293b;
             padding: 30px;
             border-radius: 10px;
-            width: 320px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            width: 300px;
             text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
         }
 
         h1 {
             color: white;
             margin-bottom: 20px;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
         }
 
         input {
@@ -35,7 +35,6 @@
             margin: 8px 0;
             border-radius: 5px;
             border: none;
-            outline: none;
         }
 
         button {
@@ -44,14 +43,14 @@
             margin-top: 10px;
             border-radius: 5px;
             border: none;
-            background: #3b82f6;
+            background-color: #3b82f6;
             color: white;
             font-weight: bold;
             cursor: pointer;
         }
 
         button:hover {
-            background: #2563eb;
+            background-color: #2563eb;
         }
 
         .footer {
@@ -63,26 +62,19 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="box">
         <h1>POC</h1>
-        
-        <form onsubmit="return fakeLogin()">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
+
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
             <button type="submit">Login</button>
         </form>
 
         <div class="footer">
-            Proof of Concept - Demo Interface
+            Proof of Concept - Demo Page
         </div>
     </div>
-
-    <script>
-        function fakeLogin() {
-            alert("Ini hanya tampilan POC (demo).");
-            return false;
-        }
-    </script>
 
 </body>
 </html>
